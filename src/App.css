@@ -1,0 +1,56 @@
+/* ===== HEADER STYLING ===== */
+header {
+  height: 50px;                /* Header is 50 pixels tall */
+  line-height: 50px;           /* Vertically centers text inside header */
+  background: linear-gradient(to right, red, orange);  /* Red to orange gradient background */
+  color: white;                /* White text for contrast */
+}
+
+/* ===== FOOTER STYLING ===== */
+footer {
+  height: 30px;                /* Footer is 30 pixels tall */
+  line-height: 30px;           /* Vertically centers text */
+  background: linear-gradient(to right, orange, red);  /* Orange to red background */
+  font-size: 8pt;              /* Small font for footer text */
+  color: white;                /* White text color */
+}
+
+/* ===== MAIN SECTION STYLING ===== */
+section {
+  height: calc(100% - 80px);   /* Takes the full page height minus header (50px) and footer (30px) */
+  overflow: auto;              /* Adds scrollbar if content is too long */
+}
+
+/* ===== SLIDER CONTAINER ===== */
+.slider {
+  width: 100%;                 /* Takes the full width of the screen */
+  height: 100%;                /* Takes the full height of the section */
+  overflow: hidden;            /* Hides content that overflows (needed for sliding effect) */
+}
+
+/* ===== SLIDES WRAPPER ===== */
+.slides {
+  width: 100%;                 /* Full width of container */
+  height: 100%;                /* Full height */
+  display: flex;               /* Arranges child slides side-by-side horizontally */
+  transition: transform 1s ease-in-out; /* Smooth sliding animation when slides move */
+}
+
+/* ===== INDIVIDUAL SLIDE STYLING ===== */
+.slide {
+  width: 100%;                 /* Each slide takes the full width of the screen */
+  height: 100%;                /* Full height of the slider */
+  background-size: 100% 100%;  /* Background image covers the full slide without repeating */
+  flex-shrink: 0;              /* Prevents slide from shrinking when container resizes */
+}
+
+/* ===== BACKGROUND IMAGES FOR EACH SLIDE ===== */
+.s1 {
+  background-image: url('/b1.jpg'); /* First slide uses image b1.png */
+}
+.s2 {
+  background-image: url('/b2.jpg'); /* Second slide uses image b2.png */
+}
+.s3 {
+  background-image: url('/b3.jpg'); /* Third slide uses image b3.png */
+}
